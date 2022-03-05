@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactUsActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+    android:id="@+id/logowithbackground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="50dp"
+    />
+
+    <TextView
+        android:id="@+id/text_about"
+        android:layout_below="@+id/logowithbackground"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" In this busy time we need to do many things for our home,
+like painting our house ,renovations, shiftting our house or
+repairing our AC, washing machine or TV, oven and many more
+electronics goods.And emergency medecine service. In our busy
+lives this is so tough to find a tecnician for this type of
+problem and also time consuming. Based on customers'
+requirements, I have come up with my online mobile application
+which can solve their problem. The paper illustrates the features,
+development method , results and uses of my Android application
+named “ One Click”."/>
+
+
+    <Button
+        android:id="@+id/visit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text_about"
+        android:background="@drawable/button"
+        android:text="Visit Us"
+        android:textSize="22sp"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

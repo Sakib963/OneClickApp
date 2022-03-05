@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logowithbackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TableLayout
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logowithbackground"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/row_one"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/row_one_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_one_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_one_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Quantity"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_one_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Price"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_two"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/row_two_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_two_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_two_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_two_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_three"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/row_three_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_three_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_three_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_three_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_four"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/row_four_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_four_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_four_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_four_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_five"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+
+            <TextView
+                android:id="@+id/row_five_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_five_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_five_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_five_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_six"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+
+            <TextView
+                android:id="@+id/row_six_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_six_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_six_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_six_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_seven"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+
+            <TextView
+                android:id="@+id/row_seven_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_seven_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_seven_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_seven_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row_eight"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+
+            <TextView
+                android:id="@+id/row_eight_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_eight_textview_two"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_eight_textview_three"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/row_eight_textview_four"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                ></TextView>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_layout"
+        android:layout_marginTop="10dp"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Total: "
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/billing_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout"
+        android:text="Billing Address:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/billing_txt"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPersonName"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/contact_number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/name_edit_text"
+        android:hint="Contact Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/address_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/contact_number_edit_text"
+        android:hint="Address"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:layout_marginBottom="5dp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:text="Order"/>
+
+
+</RelativeLayout>

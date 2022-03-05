@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logowithbackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/details_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logowithbackground"
+        android:text="Order Details"
+        android:textSize="28sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+    <TableLayout
+        android:id="@+id/table_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_txt"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:id="@+id/row_one"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/row_one_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/row_one_textview_two"
+                android:text="Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_two"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent">
+
+            <TextView
+                android:id="@+id/row_two_textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/row_two_textview_two"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="22sp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/billing_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table_one"
+        android:text="Billing Address:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/billing_txt"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:inputType="textPersonName"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/contact_number_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/name_edit_text"
+        android:hint="Contact Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/address_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:layout_below="@id/contact_number_edit_text"
+        android:hint="Address"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:layout_marginBottom="5dp"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/preferable_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferable Time: "
+        android:layout_below="@+id/address_edit_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/et_date"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/preferable_time_text"
+        android:layout_below="@+id/address_edit_text"
+        android:text="Select Date"
+        android:background="@drawable/input_design"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="9dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preferable_time_text"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Select Time:"
+            android:textSize="18sp"
+            android:padding="5dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/input_design"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_four"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/promo_code_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:background="@drawable/input_design"
+            android:padding="10dp"
+            android:hint="Enter a Promo Code"
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/apply_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/button"
+            android:text="Apply"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/order_process_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:text="Order"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

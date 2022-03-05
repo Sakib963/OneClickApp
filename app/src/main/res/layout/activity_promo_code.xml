@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PromoCode"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logowithbackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/text_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Promo Codes"
+        android:layout_below="@+id/logowithbackground"
+        android:textSize="25sp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/text_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OneClick100\nTo get 100 taka discount"
+        android:layout_below="@+id/text_one"
+        android:textSize="25sp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OneClick50\nTo get 50 taka discount"
+        android:layout_below="@+id/text_two"
+        android:textSize="25sp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="Continue"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

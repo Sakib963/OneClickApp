@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="LogOut"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        ></Button>
+
+    <TextView
+        android:id="@+id/one_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_design"
+        android:text="OneClick Solution"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        ></TextView>
+
+
+    <LinearLayout
+        android:id="@+id/linear_one_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_below="@+id/one_text">
+
+        <Button
+            android:id="@+id/appliance_repair_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:background="@drawable/appliance"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/ac_repair_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:background="@drawable/ac_repair"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_two_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_one_"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/shifting_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:background="@drawable/shifting"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/painting_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/painting"
+            android:layout_marginBottom="10dp"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_three_"
+        android:layout_below="@+id/linear_two_"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/emergency_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/emergency"
+            android:layout_marginBottom="10dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/promo_code_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/promo_code"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            ></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_three_"
+        android:id="@+id/linear_four_"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/orders_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:background="@drawable/orders"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            ></Button>
+
+        <Button
+            android:id="@+id/contact_us_btn"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="2"
+            android:background="@drawable/contact_us"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            ></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

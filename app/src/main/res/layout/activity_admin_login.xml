@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/adminlogin_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:text="ADMIN LOGIN"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/admin_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adminlogin_text"
+        android:background="@drawable/input_design"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"
+        android:hint="Admin Name"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/admin_pass_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admin_name_text"
+        android:background="@drawable/input_design"
+        android:padding="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        ></EditText>
+
+    <Button
+        android:id="@+id/login_admin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@+id/admin_pass_text"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="LOGIN"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        ></Button>
+
+</RelativeLayout>

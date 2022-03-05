@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyMedicineActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50px"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/proceed_button"
+        app:layout_constraintEnd_toEndOf="@+id/proceed_button"
+        app:srcCompat="@drawable/cart_icon" />
+    <Button
+        android:id="@+id/proceed_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Proceed"
+        android:background="@drawable/button"
+        ></Button>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/napa_extend_button"
+                android:layout_below="@+id/one_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Napa Extend Tablet (Extended Release)
+Paracetamol
+665 mg\nPrice: 40.00/- (1 pack)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <Button
+                android:id="@+id/seclo_button"
+                android:layout_below="@+id/napa_extend_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Seclo 2020mg
+Capsule
+Square Pharmaceuticals Ltd.
+Generic: Omeprazole\nPrice: 60.00/- (1 pack)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/bandage_button"
+                android:layout_below="@+id/seclo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Bandage
+Band-Aid Brand Flexible Fabric Adhesive Bandages\nPrice: 60.00/- (1 pack)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <Button
+                android:id="@+id/savlon_button"
+                android:layout_below="@+id/bandage_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Savlon Antiseptic Cream\nPrice: 60.00/- (1 pack)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/sanitary_pad_button"
+                android:layout_below="@+id/savlon_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Joya Sanitary Napkin Minipack\nPrice: 100.00/- (1 pack)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/savlon_liquid_button"
+                android:layout_below="@+id/sanitary_pad_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Savlon Liquid Antiseptic
+1000 ml\nPrice: 100.00/- (1 pack)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <Button
+                android:id="@+id/dettol_button"
+                android:layout_below="@+id/sanitary_pad_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/input_design"
+                android:text="Dettol Antiseptic Disinfectant Liquid (Concentrated)
+50 ml\nPrice: 38.00/- (1 bottle)
+"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

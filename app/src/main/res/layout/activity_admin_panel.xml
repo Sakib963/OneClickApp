@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPanel"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/logout_admin_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button"
+        android:padding="15dp"
+        android:text="Quit"
+        android:textColor="@color/white"
+        android:layout_marginBottom="35dp"
+        android:textSize="18sp"></Button>
+
+    <Button
+        android:id="@+id/add_category_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_service_btn"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="ADD NEW CATEGORY"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="15dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/add_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delete_category_btn"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="ADD NEW Service"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/delete_category_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/delete_service_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/input_design"
+        android:text="Delete a CATEGORY"
+        android:textColor="#FF0000"
+        android:textSize="18sp"></Button>
+
+    <Button
+        android:id="@+id/delete_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/order_btn"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="delete a service"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/order_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logout_admin_btn"
+        android:background="@drawable/input_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Orders"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginBottom="15dp"
+        ></Button>
+
+
+</RelativeLayout>

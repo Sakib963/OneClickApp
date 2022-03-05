@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logowithbackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/email_login_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_design"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"></EditText>
+
+    <EditText
+        android:id="@+id/password_login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_login_textview"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/input_design"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"></EditText>
+
+    <CheckBox
+        android:id="@+id/remember_me_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_login_text"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:text="Remember Me"></CheckBox>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remember_me_checkbox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:text="LOG IN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"></Button>
+
+    <TextView
+        android:id="@+id/not_registered_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:text="Not Registered Yet??"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/click_here_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/not_registered_text"
+        android:background="@drawable/input_design"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="Click Here"
+        android:textColor="@color/black"
+        android:textSize="15sp"></TextView>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oneclickapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OneClickApp">
+        <activity android:name=".MedicineOrderActivity"></activity>
+        <activity android:name=".CartActivity" />
+        <activity android:name=".EmergencyMedicineActivity" />
+        <activity android:name=".PromoCode" />
+        <activity android:name=".PaintingDetails" />
+        <activity android:name=".ShiftingDetails" />
+        <activity android:name=".ApplianceRepairDetails" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".AcRepairOrder_Details" />
+        <activity android:name=".Painting" />
+        <activity android:name=".Shifting" />
+        <activity android:name=".AcRepairService" />
+        <activity android:name=".ApplianceRepair" />
+        <activity android:name=".AdminPanel" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
